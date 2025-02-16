@@ -4,8 +4,10 @@ const arrowBtns = document.getElementsByClassName('arrow_btn');
 
 let isTriggered = false;
 
+let swiper;
+
 document.addEventListener('DOMContentLoaded', () => {
-    let swiper = new Swiper('.swiper', {
+    swiper = new Swiper('.swiper', {
         slidesPerView: 1,
         loop: true, 
         pagination: {

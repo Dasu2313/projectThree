@@ -11,6 +11,9 @@ let swiper = new Swiper('.swiper', {
         el: '.swiper-pagination',
         clickable: true, 
     },
+    hashNavigation: {
+        watchState: true,
+      },
 });
 
 const onUpdate = () => {
@@ -52,6 +55,9 @@ const onUpdate = () => {
                 el: '.swiper-pagination',
                 clickable: true,
             },
+            hashNavigation: {
+                watchState: true,
+              },
         });
     }
 

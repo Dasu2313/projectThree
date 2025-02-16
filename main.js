@@ -18,6 +18,8 @@ document.addEventListener('DOMContentLoaded', () => {
             watchState: true,
           },
     });
+
+    onUpdate();
 });
 
 const onUpdate = () => {
@@ -103,9 +105,5 @@ window.addEventListener('resize', () => {
 expandBtn.addEventListener('click', () => {
     isTriggered = !isTriggered;
     
-    onUpdate();
-});
-
-document.addEventListener('DOMContentLoaded', function () {
     onUpdate();
 });

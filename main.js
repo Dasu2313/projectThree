@@ -4,16 +4,18 @@ const arrowBtns = document.getElementsByClassName('arrow_btn');
 
 let isTriggered = false;
 
-let swiper = new Swiper('.swiper', {
-    slidesPerView: 1,
-    loop: true, 
-    pagination: {
-        el: '.swiper-pagination',
-        clickable: true, 
-    },
-    hashNavigation: {
-        watchState: true,
-      },
+document.addEventListener('DOMContentLoaded', () => {
+    let swiper = new Swiper('.swiper', {
+        slidesPerView: 1,
+        loop: true, 
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true, 
+        },
+        hashNavigation: {
+            watchState: true,
+          },
+    });
 });
 
 const onUpdate = () => {

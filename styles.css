@@ -21,7 +21,7 @@ body {
 .card {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    background: #F8F8F8;
 }
 
 .card_title {
@@ -31,7 +31,7 @@ body {
     letter-spacing: -0.2px;
     color: #7E7E82;
     padding: 16px;
-    background-color: #F8F8F8;
+    background: linear-gradient(270deg, #F8F8F8 0%, #FFFFFF 98.61%);
     margin: 0;
 }
 
@@ -70,7 +70,7 @@ body {
 
 .arrow_btn{
     display: flex;
-    align-items: center;
+    margin-left: 24px;
 }
 
 .arrow_btn--disabled{
@@ -87,15 +87,38 @@ body {
     }
 }
 
+.swiper {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    overflow: hidden; 
+}
+
+
+.swiper-wrapper {
+    display: flex;
+    gap: 24px; 
+    background-color: linear-gradient(270deg, #F8F8F8 0%, #F8F8F8 0.1% );
+}
+
+
+.swiper-slide {
+    flex-shrink: 0;           
+    width: calc(100% - 48px);  
+    box-sizing: border-box;
+}
+
+
 @media (min-width:320px) and (max-width: 767px) {
 .swiper-pagination {
     display: block !important;
 }
     
+.swiper-slide {
+    width: calc(100% - 32px);
+}
+
     .card__body {
-        display: flex;
-        flex-direction: row;
-        /* overflow: scroll; */
         width: 100%;
         gap: 0;
     }
@@ -152,4 +175,54 @@ body {
 
 .card__btn__list {
     list-style: none;
+}
+
+.swiper-pagination-bullet {
+    background: #DDDDDD;
+    width: 12px !important;
+    height: 12px !important;
+}
+
+.swiper-pagination-bullet-active {
+    background: #B5B6BC !important;
+}
+
+.swiper-button-next, .swiper-button-prev {
+    color: #B5B6BC;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-button-next:hover, .swiper-button-prev:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.swiper-pagination {
+    text-align: center;
+    margin-top: 16px;
+}
+
+.swiper-pagination-bullet {
+    background: #DDDDDD;
+    width: 12px !important;
+    height: 12px !important;
+}
+
+.swiper-pagination-bullet-active {
+    background: #B5B6BC !important;
+}
+
+.grad {
+    background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%);
+    position: absolute;
+    right: 0;
+    width: 32px;
+    height: 72px;
+    top: 16px;
+    z-index: 2;
 }

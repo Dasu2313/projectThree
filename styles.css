@@ -54,6 +54,10 @@ body {
     width: 100%;
 }
 
+.card__body-btn:hover{
+    background-color: #eeeeee;
+}
+
 .point_btns {
     display: none;
     justify-content: center;
